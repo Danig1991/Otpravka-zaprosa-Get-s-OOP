@@ -26,7 +26,7 @@ class TestChuckNorrisJokes:
         # проверка на содержании имени Chuck в теле шутки
         name_in_joke = "Chuck"
         assert name_in_joke in (result.json()["value"]), \
-            "Ошибка: Имя Chuck должна содержаться в шутке!"
+            "Ошибка: Имя Chuck должно содержаться в шутке!"
         print(f"Имя \"{name_in_joke}\" содержится в шутке.")
 
         # вывод на печать самой шутки
